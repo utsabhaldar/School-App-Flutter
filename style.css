@@ -181,9 +181,12 @@ body {
 .container{
     padding: 90px;
 }
+.container2{
+    padding: 50px;
+}
 .services-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(259px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(359px,auto));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -245,7 +248,7 @@ section{
     width: 600px;
     height: 500px;
     padding: 75px 90px;
-    margin-left: 120px;
+    margin-left: 20px;
 }
 .heading1{
     text-align: center;
@@ -417,7 +420,7 @@ section{
 
 @keyframes animate-path1 {
     100%{
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 80;
     }
 }
 @keyframes animate-path2 {
@@ -449,7 +452,7 @@ section{
     width: 100%;
     position: absolute;
     text-align: center;
-    left: 50%;
+    left: 25%;
     bottom: -5px;
     transform: translateX(-50px);
     font-size: 17px;
