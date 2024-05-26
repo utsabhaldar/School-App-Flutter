@@ -15,6 +15,9 @@ body {
   left: 0;
   width: 100%;
   padding: 20px, 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
   background: #051129;
   display: flex;
   justify-content: space-between;
@@ -31,6 +34,7 @@ body {
   opacity: 0;
   animation: slideRight 1s ease forwards;
 }
+
 .navbar a {
   display: inline-block;
   font-size: 25px;
@@ -51,7 +55,7 @@ body {
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  background: url(images/bg6.jpg) no-repeat;
+  background: url(images/bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -116,6 +120,8 @@ body {
 .btn-box {
   display: inline-block;
   padding: 12px 28px;
+  /* padding-right: 10px;
+  padding-left: 10px; */
   background: #0ef;
   border-radius: 40px;
   font-size: 16px;
@@ -129,8 +135,7 @@ body {
   box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
 }
 .btn-box:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
-    0 0 200px cyan;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan;
 }
 .about{
     display: grid;
@@ -174,6 +179,7 @@ body {
     text-align: center;
     font-size: 60px;
     padding-bottom: 70px;
+    padding-top: 70px;
 }
 .sub-title span{
     color: #0ef;
@@ -189,6 +195,9 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(359px,auto));
     grid-gap: 40px;
     margin-top: 50px;
+    justify-content: space-evenly;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .services-list div{
     background-color: transparent;
@@ -233,22 +242,23 @@ body {
     box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
 }
 .read:hover {
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
-    0 0 200px cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan;
 }
 .services-list div:hover{
     transform: translateY(-10px);
 }
 
 section{
-    display: flex;
+    display: inline;
     flex-wrap: wrap;
 }
 .container1{
     width: 600px;
     height: 500px;
     padding: 75px 90px;
-    margin-left: 20px;
+    margin-left: 330px;
+    justify-content: center;
+    align-items: center;
 }
 .heading1{
     text-align: center;
@@ -256,6 +266,8 @@ section{
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
 }
 .bar{
     font-size: 23px;
@@ -417,25 +429,57 @@ section{
 .path-4{
     animation: animate-path4 1s 1s linear forwards;
 }
+.path-5{
+    animation: animate-path5 1s 1s linear forwards;
+}
+.path-6{
+    animation: animate-path6 1s 1s linear forwards;
+}
+.path-7{
+    animation: animate-path7 1s 1s linear forwards;
+}
+.path-8{
+    animation: animate-path8 1s 1s linear forwards;
+}
 
 @keyframes animate-path1 {
     100%{
-        stroke-dashoffset: 80;
+        stroke-dashoffset: 50;
     }
 }
 @keyframes animate-path2 {
     100%{
-        stroke-dashoffset: 175;
+        stroke-dashoffset: 100;
     }
 }
 @keyframes animate-path3 {
     100%{
-        stroke-dashoffset: 125;
+        stroke-dashoffset: 25;
     }
 }
 @keyframes animate-path4 {
     100%{
         stroke-dashoffset: 75;
+    }
+}
+@keyframes animate-path5 {
+    100%{
+        stroke-dashoffset: 75;
+    }
+}
+@keyframes animate-path6 {
+    100%{
+        stroke-dashoffset: 100;
+    }
+}
+@keyframes animate-path7 {
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+@keyframes animate-path8 {
+    100%{
+        stroke-dashoffset: 125;
     }
 }
 .radial-bar .percentage{
@@ -509,13 +553,13 @@ section{
     transition: height 0.5s;
 }
 .layer h5{
-    color: #000;
+    color: #0fe2ed;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 .layer p{
-    color: #000;
+    color: #e7d954;
     font-size: 1rem;
     line-height: 1.8;
 }
@@ -546,7 +590,6 @@ section{
     align-items: center;
     gap: 3rem;
     padding-left: 30px;
-    margin-top: 130px;
 }
 .contact-text h2{
     font-size: 90px;
